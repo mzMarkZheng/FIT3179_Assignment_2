@@ -18,18 +18,17 @@
             "lookup": "properties.LGA_NAME11",
             "from": {
                 "data": {
-                    "url": "https://raw.githubusercontent.com/mzMarkZheng/FIT3179_Week9_HW/main/Dataset/state_crashes.csv"
+                    "url": "https://raw.githubusercontent.com/mzMarkZheng/FIT3179_Week9_HW/main/Dataset/ardd_fatal_crashes_lga.csv"
                 },
-                "key": "State",
+                "key": "LGA",
                 "fields": [
-                    "Fatal_Crashes",
-                    "Population"
+                    "Num_Fatalities"
                 ]
             }
         },
         {
-            "calculate": "datum.Fatal_Crashes/datum.Population * 10000",
-            "as": "Fatal Crashes per 10,000 population"
+            "calculate": "datum.Num_Fatalities + 0.001",
+            "as": "Fatal Crashes"
         }
     ],
     "mark": {
@@ -38,7 +37,7 @@
     },
     "encoding": {
         "color": {
-            "field": "Fatal Crashes per 10,000 population",
+            "field": "Fatal Crashes",
             "type": "quantitative",
             "scale": {
                 "type": "log"
@@ -46,9 +45,9 @@
         },
         "tooltip": [
             {
-                "field": "properties.STE_NAME21",
+                "field": "properties.LGA_NAME11",
                 "type": "nominal",
-                "title": "State"
+                "title": "LGA"
             },
             {
                 "field": "Fatal_Crashes",
