@@ -1,9 +1,9 @@
-State,Fatal_Crashes,Population,Motor Vehicles
-Australian Capital Territory,491,453400,"318,148"
-New South Wales,16551,8150800,"5,892,206"
-Northern Territory,1687,249900,"162,641"
-Queensland,10770,5301600,"4,303,713"
-South Australia,4622,1809100,"1,477,899"
-Tasmania,1597,567400,"516,451"
-Victoria,11783,6615100,"5,157,172"
-Western Australia,6419,2760400,"2,314,712"
+State,Fatal_Crashes,Population,Motor_Vehicles,Road_Length_(km)
+Australian Capital Territory,491,453400,"318,148",3620
+New South Wales,16551,8150800,"5,892,206",208620
+Northern Territory,1687,249900,"162,641",19440
+Queensland,10770,5301600,"4,303,713",226630
+South Australia,4622,1809100,"1,477,899",93300
+Tasmania,1597,567400,"516,451",19900
+Victoria,11783,6615100,"5,157,172",149020
+Western Australia,6419,2760400,"2,314,712",156940
