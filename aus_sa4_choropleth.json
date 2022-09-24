@@ -23,13 +23,13 @@
                 "key": "State",
                 "fields": [
                     "Fatal_Crashes",
-                    "Population"
+                    "Road_Length_(km)"
                 ]
             }
         },
         {
-            "calculate": "datum.Fatal_Crashes/datum.Population * 10000",
-            "as": "Fatal Crashes per 10,000 population"
+            "calculate": "datum.Fatal_Crashes/datum.Road_Length_(km) * 1000",
+            "as": "Fatal Crashes per 1000 km Road"
         }
     ],
     "mark": {
