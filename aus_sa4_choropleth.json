@@ -7,28 +7,29 @@
         "type": "equirectangular"
     },
     "data": {
-        "url": "https://raw.githubusercontent.com/mzMarkZheng/FIT3179_Week9_HW/main/Dataset/LGA_STATES_GRATICULES.json",
+        "url": "https://raw.githubusercontent.com/mzMarkZheng/FIT3179_Week9_HW/main/Dataset/states.json",
         "format": {
             "type": "topojson",
-            "feature": "SA4_2021_AUST_GDA2020"
+            "feature": "STE_2021_AUST_GDA2020"
         }
     },
     "transform": [
         {
-            "lookup": "properties.LGA_NAME11",
+            "lookup": "properties.STE_NAME21",
             "from": {
                 "data": {
-                    "url": "https://raw.githubusercontent.com/mzMarkZheng/FIT3179_Week9_HW/main/Dataset/ardd_fatal_crashes_lga.csv"
+                    "url": "https://raw.githubusercontent.com/mzMarkZheng/FIT3179_Week9_HW/main/Dataset/state_crashes.csv"
                 },
-                "key": "LGA",
+                "key": "State",
                 "fields": [
-                    "Num_Fatalities"
+                    "Fatal_Crashes",
+                    "Population"
                 ]
             }
         },
         {
-            "calculate": "datum.Num_Fatalities + 0.001",
-            "as": "Fatal Crashes"
+            "calculate": "datum.Fatal_Crashes/datum.Population * 10000",
+            "as": "Fatal Crashes per 10,000 population"
         }
     ],
     "mark": {
@@ -37,7 +38,7 @@
     },
     "encoding": {
         "color": {
-            "field": "Fatal Crashes",
+            "field": "Fatal Crashes per 10,000 population",
             "type": "quantitative",
             "scale": {
                 "type": "log"
@@ -45,9 +46,9 @@
         },
         "tooltip": [
             {
-                "field": "properties.LGA_NAME11",
+                "field": "properties.STE_NAME21",
                 "type": "nominal",
-                "title": "LGA"
+                "title": "State"
             },
             {
                 "field": "Fatal_Crashes",
