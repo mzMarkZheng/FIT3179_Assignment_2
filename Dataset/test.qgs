@@ -1,0 +1,826 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis saveUserFull="Mark Zheng" version="3.22.11-Białowieża" saveUser="markz" projectname="" saveDateTime="2022-09-23T01:11:17">
+  <homePath path=""/>
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <trust active="0"/>
+  <projectCrs>
+    <spatialrefsys>
+      <wkt>GEOGCRS["GDA2020",DATUM["Geocentric Datum of Australia 2020",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Geodesy, cadastre, engineering survey, topographic mapping."],AREA["Australia including Lord Howe Island, Macquarie Island, Ashmore and Cartier Islands, Christmas Island, Cocos (Keeling) Islands, Norfolk Island. All onshore and offshore."],BBOX[-60.55,93.41,-8.47,173.34]],ID["EPSG",7844]]</wkt>
+      <proj4>+proj=longlat +ellps=GRS80 +no_defs</proj4>
+      <srsid>29035</srsid>
+      <srid>7844</srid>
+      <authid>EPSG:7844</authid>
+      <description>GDA2020</description>
+      <projectionacronym>longlat</projectionacronym>
+      <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+      <geographicflag>true</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <layer-tree-group>
+    <customproperties>
+      <Option/>
+    </customproperties>
+    <layer-tree-layer source="test.xlsx|layername=test" providerKey="ogr" legend_exp="" patch_size="-1,-1" id="test_fff089c0_32a4_4a68_ba8f_79444fdf20b7" checked="Qt::Checked" name="test" expanded="1" legend_split_behavior="0">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer source="/vsizip/D:\Download\SA4_2021_AUST_SHP_GDA2020.zip/SA4_2021_AUST_GDA2020.shp|layername=SA4_2021_AUST_GDA2020" providerKey="ogr" legend_exp="" patch_size="-1,-1" id="SA4_2021_AUST_GDA2020_shp_7ffedf7b_ab74_4e85_9116_cf179ecfcc77" checked="Qt::Checked" name="SA4_2021_AUST_SHP_GDA2020 — SA4_2021_AUST_GDA2020.shp" expanded="1" legend_split_behavior="0">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>SA4_2021_AUST_GDA2020_shp_7ffedf7b_ab74_4e85_9116_cf179ecfcc77</item>
+      <item>test_fff089c0_32a4_4a68_ba8f_79444fdf20b7</item>
+    </custom-order>
+  </layer-tree-group>
+  <snapping-settings unit="1" scaleDependencyMode="0" mode="2" minScale="0" enabled="0" type="1" intersection-snapping="0" self-snapping="0" maxScale="0" tolerance="12">
+    <individual-layer-settings>
+      <layer-setting minScale="0" id="SA4_2021_AUST_GDA2020_shp_7ffedf7b_ab74_4e85_9116_cf179ecfcc77" enabled="0" type="1" maxScale="0" tolerance="12" units="1"/>
+    </individual-layer-settings>
+  </snapping-settings>
+  <relations/>
+  <polymorphicRelations/>
+  <mapcanvas name="theMapCanvas" annotationsVisible="1">
+    <units>degrees</units>
+    <extent>
+      <xmin>95.03742443889898084</xmin>
+      <ymin>-47.67335155696027016</ymin>
+      <xmax>169.77756643320100238</xmax>
+      <ymax>-5.20930753728823959</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <wkt>GEOGCRS["GDA2020",DATUM["Geocentric Datum of Australia 2020",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Geodesy, cadastre, engineering survey, topographic mapping."],AREA["Australia including Lord Howe Island, Macquarie Island, Ashmore and Cartier Islands, Christmas Island, Cocos (Keeling) Islands, Norfolk Island. All onshore and offshore."],BBOX[-60.55,93.41,-8.47,173.34]],ID["EPSG",7844]]</wkt>
+        <proj4>+proj=longlat +ellps=GRS80 +no_defs</proj4>
+        <srsid>29035</srsid>
+        <srid>7844</srid>
+        <authid>EPSG:7844</authid>
+        <description>GDA2020</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
+  <projectModels/>
+  <legend updateDrawingOrder="true">
+    <legendlayer showFeatureCount="0" drawingOrder="-1" checked="Qt::Checked" open="true" name="test">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile isInOverview="0" layerid="test_fff089c0_32a4_4a68_ba8f_79444fdf20b7" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer showFeatureCount="0" drawingOrder="-1" checked="Qt::Checked" open="true" name="SA4_2021_AUST_SHP_GDA2020 — SA4_2021_AUST_GDA2020.shp">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile isInOverview="0" layerid="SA4_2021_AUST_GDA2020_shp_7ffedf7b_ab74_4e85_9116_cf179ecfcc77" visible="1"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <mapViewDocks/>
+  <mapViewDocks3D/>
+  <mapcanvas name="mAreaCanvas" annotationsVisible="1">
+    <units>degrees</units>
+    <extent>
+      <xmin>0</xmin>
+      <ymin>0</ymin>
+      <xmax>0</xmax>
+      <ymax>0</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
+  <main-annotation-layer autoRefreshEnabled="0" refreshOnNotifyMessage="" autoRefreshTime="0" type="annotation" refreshOnNotifyEnabled="0" legendPlaceholderImage="">
+    <id>Annotations_b226b942_26fb_4f41_aebe_84c63dc06ed9</id>
+    <datasource></datasource>
+    <keywordList>
+      <value></value>
+    </keywordList>
+    <layername>Annotations</layername>
+    <srs>
+      <spatialrefsys>
+        <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </srs>
+    <resourceMetadata>
+      <identifier></identifier>
+      <parentidentifier></parentidentifier>
+      <language></language>
+      <type></type>
+      <title></title>
+      <abstract></abstract>
+      <links/>
+      <fees></fees>
+      <encoding></encoding>
+      <crs>
+        <spatialrefsys>
+          <wkt></wkt>
+          <proj4></proj4>
+          <srsid>0</srsid>
+          <srid>0</srid>
+          <authid></authid>
+          <description></description>
+          <projectionacronym></projectionacronym>
+          <ellipsoidacronym></ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </crs>
+      <extent/>
+    </resourceMetadata>
+    <items/>
+    <layerOpacity>1</layerOpacity>
+    <blendMode>0</blendMode>
+    <paintEffect/>
+  </main-annotation-layer>
+  <projectlayers>
+    <maplayer simplifyDrawingTol="1" autoRefreshEnabled="0" geometry="Polygon" symbologyReferenceScale="-1" maxScale="0" simplifyMaxScale="1" refreshOnNotifyMessage="" labelsEnabled="0" hasScaleBasedVisibilityFlag="0" simplifyAlgorithm="0" type="vector" autoRefreshTime="0" readOnly="0" styleCategories="AllStyleCategories" simplifyLocal="1" minScale="100000000" wkbType="MultiPolygon" legendPlaceholderImage="" simplifyDrawingHints="1" refreshOnNotifyEnabled="0">
+      <extent>
+        <xmin>96.81695162923954001</xmin>
+        <ymin>-43.7404965718585288</ymin>
+        <xmax>167.99803924286024426</xmax>
+        <ymax>-9.14216252238992766</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>96.81695162923954001</xmin>
+        <ymin>-43.7404965718585288</ymin>
+        <xmax>167.9980392428603011</xmax>
+        <ymax>-9.14216252238994365</ymax>
+      </wgs84extent>
+      <id>SA4_2021_AUST_GDA2020_shp_7ffedf7b_ab74_4e85_9116_cf179ecfcc77</id>
+      <datasource>/vsizip/D:\Download\SA4_2021_AUST_SHP_GDA2020.zip/SA4_2021_AUST_GDA2020.shp|layername=SA4_2021_AUST_GDA2020</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>SA4_2021_AUST_SHP_GDA2020 — SA4_2021_AUST_GDA2020.shp</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>GEOGCRS["GDA2020",DATUM["Geocentric Datum of Australia 2020",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Geodesy, cadastre, engineering survey, topographic mapping."],AREA["Australia including Lord Howe Island, Macquarie Island, Ashmore and Cartier Islands, Christmas Island, Cocos (Keeling) Islands, Norfolk Island. All onshore and offshore."],BBOX[-60.55,93.41,-8.47,173.34]],ID["EPSG",7844]]</wkt>
+          <proj4>+proj=longlat +ellps=GRS80 +no_defs</proj4>
+          <srsid>29035</srsid>
+          <srid>7844</srid>
+          <authid>EPSG:7844</authid>
+          <description>GDA2020</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="windows-1252">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal startField="" durationUnit="min" fixedDuration="0" mode="0" durationField="" enabled="0" limitMode="0" endExpression="" startExpression="" endField="" accumulate="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" referencescale="-1" enableorderby="0">
+        <symbols>
+          <symbol force_rhr="0" type="fill" name="0" clip_to_extent="1" alpha="1">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option value="" type="QString" name="name"/>
+                <Option name="properties"/>
+                <Option value="collection" type="QString" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer enabled="1" locked="0" pass="0" class="SimpleFill">
+              <Option type="Map">
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale"/>
+                <Option value="141,90,153,255" type="QString" name="color"/>
+                <Option value="bevel" type="QString" name="joinstyle"/>
+                <Option value="0,0" type="QString" name="offset"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+                <Option value="MM" type="QString" name="offset_unit"/>
+                <Option value="35,35,35,255" type="QString" name="outline_color"/>
+                <Option value="solid" type="QString" name="outline_style"/>
+                <Option value="0.26" type="QString" name="outline_width"/>
+                <Option value="MM" type="QString" name="outline_width_unit"/>
+                <Option value="solid" type="QString" name="style"/>
+              </Option>
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="141,90,153,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <Option/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks type="StringList">
+          <Option value="" type="QString"/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector" showLabelLegend="0"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field configurationFlags="None" name="SA4_CODE21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="SA4_NAME21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="CHG_FLAG21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="CHG_LBL21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="GCC_CODE21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="GCC_NAME21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="STE_CODE21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="STE_NAME21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="AUS_CODE21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="AUS_NAME21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="AREASQKM21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="LOCI_URI21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" name="" field="SA4_CODE21"/>
+        <alias index="1" name="" field="SA4_NAME21"/>
+        <alias index="2" name="" field="CHG_FLAG21"/>
+        <alias index="3" name="" field="CHG_LBL21"/>
+        <alias index="4" name="" field="GCC_CODE21"/>
+        <alias index="5" name="" field="GCC_NAME21"/>
+        <alias index="6" name="" field="STE_CODE21"/>
+        <alias index="7" name="" field="STE_NAME21"/>
+        <alias index="8" name="" field="AUS_CODE21"/>
+        <alias index="9" name="" field="AUS_NAME21"/>
+        <alias index="10" name="" field="AREASQKM21"/>
+        <alias index="11" name="" field="LOCI_URI21"/>
+      </aliases>
+      <defaults>
+        <default expression="" applyOnUpdate="0" field="SA4_CODE21"/>
+        <default expression="" applyOnUpdate="0" field="SA4_NAME21"/>
+        <default expression="" applyOnUpdate="0" field="CHG_FLAG21"/>
+        <default expression="" applyOnUpdate="0" field="CHG_LBL21"/>
+        <default expression="" applyOnUpdate="0" field="GCC_CODE21"/>
+        <default expression="" applyOnUpdate="0" field="GCC_NAME21"/>
+        <default expression="" applyOnUpdate="0" field="STE_CODE21"/>
+        <default expression="" applyOnUpdate="0" field="STE_NAME21"/>
+        <default expression="" applyOnUpdate="0" field="AUS_CODE21"/>
+        <default expression="" applyOnUpdate="0" field="AUS_NAME21"/>
+        <default expression="" applyOnUpdate="0" field="AREASQKM21"/>
+        <default expression="" applyOnUpdate="0" field="LOCI_URI21"/>
+      </defaults>
+      <constraints>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="SA4_CODE21"/>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="SA4_NAME21"/>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="CHG_FLAG21"/>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="CHG_LBL21"/>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="GCC_CODE21"/>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="GCC_NAME21"/>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="STE_CODE21"/>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="STE_NAME21"/>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="AUS_CODE21"/>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="AUS_NAME21"/>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="AREASQKM21"/>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="LOCI_URI21"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint exp="" desc="" field="SA4_CODE21"/>
+        <constraint exp="" desc="" field="SA4_NAME21"/>
+        <constraint exp="" desc="" field="CHG_FLAG21"/>
+        <constraint exp="" desc="" field="CHG_LBL21"/>
+        <constraint exp="" desc="" field="GCC_CODE21"/>
+        <constraint exp="" desc="" field="GCC_NAME21"/>
+        <constraint exp="" desc="" field="STE_CODE21"/>
+        <constraint exp="" desc="" field="STE_NAME21"/>
+        <constraint exp="" desc="" field="AUS_CODE21"/>
+        <constraint exp="" desc="" field="AUS_NAME21"/>
+        <constraint exp="" desc="" field="AREASQKM21"/>
+        <constraint exp="" desc="" field="LOCI_URI21"/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <reuseLastValue/>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer styleCategories="AllStyleCategories" autoRefreshEnabled="0" refreshOnNotifyMessage="" minScale="1e+08" autoRefreshTime="0" type="vector" readOnly="0" refreshOnNotifyEnabled="0" geometry="No geometry" wkbType="NoGeometry" maxScale="0" legendPlaceholderImage="" hasScaleBasedVisibilityFlag="0">
+      <id>test_fff089c0_32a4_4a68_ba8f_79444fdf20b7</id>
+      <datasource>test.xlsx|layername=test</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>test</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt></wkt>
+          <proj4></proj4>
+          <srsid>0</srsid>
+          <srid>0</srid>
+          <authid></authid>
+          <description></description>
+          <projectionacronym></projectionacronym>
+          <ellipsoidacronym></ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal startField="" durationUnit="min" fixedDuration="0" mode="0" durationField="" enabled="0" limitMode="0" endExpression="" startExpression="" endField="" accumulate="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <customproperties>
+        <Option/>
+      </customproperties>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks type="StringList">
+          <Option value="" type="QString"/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector" showLabelLegend="0"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field configurationFlags="None" name="SA4_CODE21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="SA4_NAME21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="CHG_FLAG21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="CHG_LBL21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="GCC_CODE21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="GCC_NAME21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="STE_CODE21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="STE_NAME21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="AUS_CODE21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="AUS_NAME21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="AREASQKM21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field configurationFlags="None" name="LOCI_URI21">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" name="" field="SA4_CODE21"/>
+        <alias index="1" name="" field="SA4_NAME21"/>
+        <alias index="2" name="" field="CHG_FLAG21"/>
+        <alias index="3" name="" field="CHG_LBL21"/>
+        <alias index="4" name="" field="GCC_CODE21"/>
+        <alias index="5" name="" field="GCC_NAME21"/>
+        <alias index="6" name="" field="STE_CODE21"/>
+        <alias index="7" name="" field="STE_NAME21"/>
+        <alias index="8" name="" field="AUS_CODE21"/>
+        <alias index="9" name="" field="AUS_NAME21"/>
+        <alias index="10" name="" field="AREASQKM21"/>
+        <alias index="11" name="" field="LOCI_URI21"/>
+      </aliases>
+      <defaults>
+        <default expression="" applyOnUpdate="0" field="SA4_CODE21"/>
+        <default expression="" applyOnUpdate="0" field="SA4_NAME21"/>
+        <default expression="" applyOnUpdate="0" field="CHG_FLAG21"/>
+        <default expression="" applyOnUpdate="0" field="CHG_LBL21"/>
+        <default expression="" applyOnUpdate="0" field="GCC_CODE21"/>
+        <default expression="" applyOnUpdate="0" field="GCC_NAME21"/>
+        <default expression="" applyOnUpdate="0" field="STE_CODE21"/>
+        <default expression="" applyOnUpdate="0" field="STE_NAME21"/>
+        <default expression="" applyOnUpdate="0" field="AUS_CODE21"/>
+        <default expression="" applyOnUpdate="0" field="AUS_NAME21"/>
+        <default expression="" applyOnUpdate="0" field="AREASQKM21"/>
+        <default expression="" applyOnUpdate="0" field="LOCI_URI21"/>
+      </defaults>
+      <constraints>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="SA4_CODE21"/>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="SA4_NAME21"/>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="CHG_FLAG21"/>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="CHG_LBL21"/>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="GCC_CODE21"/>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="GCC_NAME21"/>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="STE_CODE21"/>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="STE_NAME21"/>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="AUS_CODE21"/>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="AUS_NAME21"/>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="AREASQKM21"/>
+        <constraint constraints="0" unique_strength="0" exp_strength="0" notnull_strength="0" field="LOCI_URI21"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint exp="" desc="" field="SA4_CODE21"/>
+        <constraint exp="" desc="" field="SA4_NAME21"/>
+        <constraint exp="" desc="" field="CHG_FLAG21"/>
+        <constraint exp="" desc="" field="CHG_LBL21"/>
+        <constraint exp="" desc="" field="GCC_CODE21"/>
+        <constraint exp="" desc="" field="GCC_NAME21"/>
+        <constraint exp="" desc="" field="STE_CODE21"/>
+        <constraint exp="" desc="" field="STE_NAME21"/>
+        <constraint exp="" desc="" field="AUS_CODE21"/>
+        <constraint exp="" desc="" field="AUS_NAME21"/>
+        <constraint exp="" desc="" field="AREASQKM21"/>
+        <constraint exp="" desc="" field="LOCI_URI21"/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <reuseLastValue/>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </projectlayers>
+  <layerorder>
+    <layer id="SA4_2021_AUST_GDA2020_shp_7ffedf7b_ab74_4e85_9116_cf179ecfcc77"/>
+    <layer id="test_fff089c0_32a4_4a68_ba8f_79444fdf20b7"/>
+  </layerorder>
+  <properties>
+    <Digitizing>
+      <AvoidIntersectionsMode type="int">0</AvoidIntersectionsMode>
+    </Digitizing>
+    <Gui>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+    </Gui>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <Measure>
+      <Ellipsoid type="QString">EPSG:7019</Ellipsoid>
+    </Measure>
+    <Measurement>
+      <AreaUnits type="QString"></AreaUnits>
+      <DistanceUnits type="QString"></DistanceUnits>
+    </Measurement>
+    <PAL>
+      <CandidatesLinePerCM type="double">5</CandidatesLinePerCM>
+      <CandidatesPolygonPerCM type="double">2.5</CandidatesPolygonPerCM>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <DrawUnplaced type="bool">false</DrawUnplaced>
+      <PlacementEngineVersion type="int">1</PlacementEngineVersion>
+      <SearchMethod type="int">0</SearchMethod>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <TextFormat type="int">0</TextFormat>
+      <UnplacedColor type="QString">255,0,0,255</UnplacedColor>
+    </PAL>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <PositionPrecision>
+      <Automatic type="bool">true</Automatic>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+    </PositionPrecision>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+  </properties>
+  <dataDefinedServerProperties>
+    <Option type="Map">
+      <Option value="" type="QString" name="name"/>
+      <Option name="properties"/>
+      <Option value="collection" type="QString" name="type"/>
+    </Option>
+  </dataDefinedServerProperties>
+  <visibility-presets/>
+  <transformContext/>
+  <projectMetadata>
+    <identifier></identifier>
+    <parentidentifier></parentidentifier>
+    <language></language>
+    <type></type>
+    <title></title>
+    <abstract></abstract>
+    <links/>
+    <author>Mark Zheng</author>
+    <creation>2022-09-23T01:08:57</creation>
+  </projectMetadata>
+  <Annotations/>
+  <Layouts/>
+  <Bookmarks/>
+  <ProjectViewSettings UseProjectScales="0">
+    <Scales/>
+    <DefaultViewExtent ymax="0.12010121316463795" xmin="95.03742443889898084" xmax="169.77756643320100238" ymin="-53.0027603074131477">
+      <spatialrefsys>
+        <wkt>GEOGCRS["GDA2020",DATUM["Geocentric Datum of Australia 2020",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Geodesy, cadastre, engineering survey, topographic mapping."],AREA["Australia including Lord Howe Island, Macquarie Island, Ashmore and Cartier Islands, Christmas Island, Cocos (Keeling) Islands, Norfolk Island. All onshore and offshore."],BBOX[-60.55,93.41,-8.47,173.34]],ID["EPSG",7844]]</wkt>
+        <proj4>+proj=longlat +ellps=GRS80 +no_defs</proj4>
+        <srsid>29035</srsid>
+        <srid>7844</srid>
+        <authid>EPSG:7844</authid>
+        <description>GDA2020</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </DefaultViewExtent>
+  </ProjectViewSettings>
+  <ProjectTimeSettings timeStep="1" cumulativeTemporalRange="0" frameRate="1" timeStepUnit="h"/>
+  <ProjectDisplaySettings>
+    <BearingFormat id="bearing">
+      <Option type="Map">
+        <Option value="" type="QChar" name="decimal_separator"/>
+        <Option value="6" type="int" name="decimals"/>
+        <Option value="0" type="int" name="direction_format"/>
+        <Option value="0" type="int" name="rounding_type"/>
+        <Option value="false" type="bool" name="show_plus"/>
+        <Option value="true" type="bool" name="show_thousand_separator"/>
+        <Option value="false" type="bool" name="show_trailing_zeros"/>
+        <Option value="" type="QChar" name="thousand_separator"/>
+      </Option>
+    </BearingFormat>
+  </ProjectDisplaySettings>
+</qgis>
