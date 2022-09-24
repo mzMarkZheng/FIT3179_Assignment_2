@@ -23,13 +23,13 @@
                 "key": "State",
                 "fields": [
                     "Fatal_Crashes",
-                    "Road_Length_(km)"
+                    "Road_Length"
                 ]
             }
         },
         {
-            "calculate": "datum.Fatal_Crashes/datum.Road_Length_(km) * 1000",
-            "as": "Fatal Crashes per 1000 km Road"
+            "calculate": "datum.Fatal_Crashes/datum.Road_Length * 1000",
+            "as": "Fatal Crashes per 1000 km of Road"
         }
     ],
     "mark": {
@@ -38,7 +38,7 @@
     },
     "encoding": {
         "color": {
-            "field": "Fatal Crashes per 10,000 population",
+            "field": "Fatal Crashes per 1000 km of Road",
             "type": "quantitative",
             "scale": {
                 "type": "log"

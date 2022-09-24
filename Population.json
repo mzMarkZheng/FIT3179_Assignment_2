@@ -1,0 +1,59 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Fatal Crashes",
+    "width": 800,
+    "height": 400,
+    "projection": {
+        "type": "equirectangular"
+    },
+    "data": {
+        "url": "https://raw.githubusercontent.com/mzMarkZheng/FIT3179_Week9_HW/main/Dataset/states.json",
+        "format": {
+            "type": "topojson",
+            "feature": "STE_2021_AUST_GDA2020"
+        }
+    },
+    "transform": [
+        {
+            "lookup": "properties.STE_NAME21",
+            "from": {
+                "data": {
+                    "url": "https://raw.githubusercontent.com/mzMarkZheng/FIT3179_Week9_HW/main/Dataset/state_crashes.csv"
+                },
+                "key": "State",
+                "fields": [
+                    "Fatal_Crashes",
+                    "Population"
+                ]
+            }
+        },
+        {
+            "calculate": "datum.Fatal_Crashes/datum.Population * 10000",
+            "as": "Fatal Crashes per 10,000 People"
+        }
+    ],
+    "mark": {
+        "type": "geoshape",
+        "stroke": "black"
+    },
+    "encoding": {
+        "color": {
+            "field": "Fatal Crashes per 10,000 People",
+            "type": "quantitative",
+            "scale": {
+                "type": "log"
+            }
+        },
+        "tooltip": [
+            {
+                "field": "properties.STE_NAME21",
+                "type": "nominal",
+                "title": "State"
+            },
+            {
+                "field": "Fatal_Crashes",
+                "type": "quantitative"
+            }
+        ]
+    }
+}
