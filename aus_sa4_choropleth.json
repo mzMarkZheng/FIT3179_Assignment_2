@@ -7,7 +7,7 @@
         "type": "equirectangular"
     },
     "data": {
-        "url": "https://raw.githubusercontent.com/mzMarkZheng/FIT3179_Week9_HW/main/Dataset/sa4.json",
+        "url": "https://raw.githubusercontent.com/mzMarkZheng/FIT3179_Week9_HW/main/Dataset/LGA_STATES_GRATICULES.json",
         "format": {
             "type": "topojson",
             "feature": "SA4_2021_AUST_GDA2020"
@@ -15,7 +15,7 @@
     },
     "transform": [
         {
-            "lookup": "properties.STE_NAME21",
+            "lookup": "properties.LGA_NAME11",
             "from": {
                 "data": {
                     "url": "https://raw.githubusercontent.com/mzMarkZheng/FIT3179_Week9_HW/main/Dataset/state_crashes.csv"

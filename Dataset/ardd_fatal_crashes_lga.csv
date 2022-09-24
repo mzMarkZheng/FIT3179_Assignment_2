@@ -1,0 +1,508 @@
+LGA,Num_Fatalities
+Adelaide,8
+Adelaide Hills,33
+Albany,9
+Albury,6
+Alexandrina,27
+Alice Springs,19
+Alpine,9
+Anangu Pitjantjatjara,7
+Ararat,12
+Armadale,31
+Armidale Regional,13
+Ashburton,8
+Augusta-Margaret River,10
+Ballarat,27
+Ballina,18
+Balonne,4
+Balranald,6
+Banana,8
+Banyule,14
+Barcaldine,1
+Barcoo,2
+Barkly,27
+Barossa,33
+Barunga West,2
+Bass Coast,10
+Bassendean,2
+Bathurst Regional,27
+Baw Baw,26
+Bayside,27
+Bayside,13
+Bayswater,11
+Bega Valley,18
+Bellingen,20
+Belmont,7
+Benalla,14
+Berri and Barmera,5
+Berrigan,5
+Beverley,5
+Blacktown,50
+Bland,12
+Blayney,5
+Blue Mountains,12
+Boddington,5
+Bogan,8
+Boroondara,21
+Bourke,2
+Boyup Brook,1
+Break O'Day,8
+Brewarrina,5
+Bridgetown-Greenbushes,5
+Brighton,11
+Brimbank,51
+Brisbane,99
+Broken Hill,1
+Brookton,9
+Broome,10
+Broomehill-Tambellup,10
+Bruce Rock,6
+Bulloo,1
+Buloke,11
+Bunbury,8
+Bundaberg,59
+Burdekin,13
+Burke,1
+Burnie,8
+Burnside,5
+Burwood,5
+Busselton,24
+Byron,12
+Cabonne,18
+Cairns,33
+Cambridge,6
+Camden,15
+Campaspe,29
+Campbelltown,24
+Campbelltown,7
+Canada Bay,9
+Canning,14
+Canterbury-Bankstown,55
+Capel,15
+Cardinia,55
+Carnamah,3
+Carnarvon,1
+Carnarvon,6
+Carpentaria,1
+Carrathool,8
+Casey,52
+Cassowary Coast,19
+Ceduna,4
+Central Coast,98
+Central Coast,10
+Central Darling,4
+Central Desert,14
+Central Goldfields,10
+Central Highlands,7
+Central Highlands,21
+Cessnock,26
+Chapman Valley,2
+Charles Sturt,27
+Charters Towers,16
+Chittering,8
+Circular Head,9
+Clare and Gilbert Valleys,11
+Claremont,2
+Clarence,17
+Clarence Valley,58
+Cleve,3
+Cloncurry,9
+Cobar,5
+Cockburn,26
+Coffs Harbour,23
+Colac-Otway,24
+Collie,13
+Coober Pedy,1
+Cook,12
+Coolamon,7
+Coolgardie,7
+Coomalie,4
+Coonamble,2
+Cootamundra-Gundagai,17
+Copper Coast,5
+Corangamite,28
+Corrigin,5
+Cottesloe,1
+Cowra,12
+Cranbrook,1
+Croydon,1
+Cuballing,2
+Cue,3
+Cumberland,41
+Cunderdin,2
+Dalwallinu,5
+Dandaragan,9
+Dardanup,17
+Darebin,19
+Darwin,32
+Denmark,5
+Derby - West Ki,1
+Derby-West Kimberley,18
+Derwent Valley,7
+Devonport,6
+Donnybrook-Balingup,11
+Doomadgee,1
+Dorset,2
+Douglas,6
+Dubbo Regional,45
+Dumbleyung,2
+Dundas,11
+Dungog,5
+East Arnhem,10
+East Gippsland,44
+East Pilbara,1
+East Pilbara,10
+Edward River,5
+Elliston,2
+Esperance,1
+Esperance,9
+Etheridge,3
+Eurobodalla,30
+Exmouth,2
+Fairfield,49
+Federation,18
+Flinders,1
+Flinders Ranges,1
+Forbes,10
+Franklin Harbour,4
+Frankston,25
+Fraser Coast,26
+Fremantle,10
+Gannawarra,9
+Gawler,6
+George Town,1
+Georges River,20
+Gilgandra,9
+Gingin,17
+Gladstone,23
+Glamorgan/Spring Bay,2
+Glen Eira,13
+Glen Innes Severn,14
+Glenelg,23
+Glenorchy,17
+Gnowangerup,7
+Gold Coast,74
+Golden Plains,23
+Goomalling,1
+Goondiwindi,6
+Gosnells,19
+Goulburn Mulwaree,27
+Goyder,9
+Grant,12
+Greater Bendigo,46
+Greater Dandenong,34
+Greater Geelong,65
+Greater Geraldton,25
+Greater Hume,22
+Greater Shepparton,50
+Griffith,10
+Gunnedah,7
+Gwydir,4
+Gympie,47
+Halls Creek,10
+Harvey,26
+Hawkesbury,33
+Hay,4
+Hepburn,22
+Hilltops,23
+Hinchinbrook,3
+Hindmarsh,4
+Hobart,16
+Hobsons Bay,15
+Holdfast Bay,7
+Hope Vale,2
+Hornsby,26
+Horsham,23
+Hume,41
+Hunters Hill,3
+Huon Valley,11
+Indigo,18
+Inner West,23
+Inverell,16
+Ipswich,32
+Irwin,12
+Isaac,24
+Jerramungup,5
+Joondalup,28
+Junee,11
+Kalamunda,18
+Kalgoorlie - Bo,2
+Kalgoorlie/Boulder,16
+Kangaroo Island,12
+Karoonda East Murray,2
+Karratha,7
+Katanning,1
+Katherine,9
+Kellerberrin,4
+Kempsey,21
+Kent,1
+Kentish,5
+Kiama,5
+Kimba,1
+King Island,4
+Kingborough,12
+Kingston,26
+Kingston,6
+Knox,24
+Kojonup,4
+Kondinin,5
+Kulin,1
+Ku-ring-gai,13
+Kwinana,12
+Kyogle,14
+Lachlan,8
+Lake Grace,6
+Lake Macquarie,65
+Lane Cove,6
+Latrobe,33
+Latrobe,15
+Launceston,34
+Leeton,5
+Leonora,1
+Light,24
+Lismore,24
+Litchfield,58
+Lithgow,14
+Liverpool,39
+Liverpool Plains,9
+Livingstone,14
+Lockhart,3
+Lockhart River,1
+Lockyer Valley,16
+Loddon,16
+Logan,66
+Longreach,4
+Lower Eyre Peninsula,5
+Loxton Waikerie,19
+MacDonnell,29
+Macedon Ranges,27
+Mackay,33
+Maitland,17
+Mallala,15
+Mandurah,18
+Manjimup,12
+Manningham,12
+Mansfield,11
+Maranoa,12
+Mareeba,23
+Maribyrnong,19
+Marion,17
+Maroondah,16
+McKinlay,3
+Meander Valley,21
+Meekatharra,1
+Meekatharra,4
+Melbourne,28
+Melton,35
+Melville,8
+Menzies,2
+Merredin,4
+Mid Murray,19
+Mid-Coast,67
+Mid-Western Regional,26
+Mildura,25
+Mingenew,1
+Mitcham,11
+Mitchell,33
+Moira,34
+Monash,41
+Moonee Valley,16
+Moora,3
+Moorabool,29
+Morawa,1
+Moree Plains,11
+Moreland,19
+Moreton Bay,74
+Mornington,2
+Mornington Peninsula,57
+Mosman Park,1
+Mount Alexander,18
+Mount Barker,18
+Mount Gambier,2
+Mount Isa,6
+Mount Magnet,3
+Mount Marshall,1
+Mount Remarkable,8
+Moyne,13
+Mundaring,20
+Murray,23
+Murray Bridge,20
+Murray River,7
+Murrindindi,37
+Murrumbidgee,6
+Muswellbrook,23
+Nambucca,19
+Nannup,4
+Naracoorte and Lucindale,17
+Narrabri,23
+Narrandera,9
+Narrogin,5
+Narromine,19
+Nedlands,3
+Newcastle,34
+Ngaanyatjarraku,1
+Nillumbik,17
+Noosa,16
+North Burnett,15
+North Sydney,9
+Northam,21
+Northampton,7
+Northern Areas,3
+Northern Beaches,25
+Northern Grampians,18
+Northern Midlands,20
+Northern Peninsula Area,2
+Norwood Payneham St Peters,6
+Oberon,6
+Onkaparinga,35
+Orange,11
+Orroroo/Carrieton,2
+Palmerston,13
+Parkes,12
+Parramatta,45
+Penrith,43
+Perenjori,1
+Perth,10
+Pingelly,3
+Plantagenet,16
+Playford,38
+Pormpuraaw,1
+Port Adelaide Enfield,24
+Port Augusta,16
+Port Hedland (T,1
+Port Hedland,14
+Port Lincoln,2
+Port Macquarie-Hastings,38
+Port Phillip,11
+Port Pirie City and Dists,19
+Port Stephens,45
+Prospect,4
+Pyrenees,19
+Quairading,5
+Queanbeyan-Palerang Regional,20
+Quilpie,2
+Randwick,15
+Ravensthorpe,2
+Redland,16
+Renmark Paringa,7
+Richmond Valley,25
+Robe,3
+Rockhampton,22
+Rockingham,30
+Roper Gulf,30
+Ryde,15
+Salisbury,40
+Sandstone,2
+Scenic Rim,33
+Serpentine-Jarrahdale,25
+Shark Bay,1
+Shellharbour,10
+Shoalhaven,62
+Singleton,38
+Snowy Monaro Regional,33
+Snowy Valleys,21
+Somerset,30
+Sorell,10
+South Burnett,30
+South Gippsland,35
+South Perth,3
+Southern Downs,17
+Southern Grampians,11
+Southern Mallee,2
+Southern Midlands,11
+Stirling,33
+Stonnington,11
+Strathbogie,18
+Strathfield,8
+Streaky Bay,5
+Subiaco,1
+Sunshine Coast,66
+Surf Coast,14
+Sutherland,38
+Swan,37
+Swan Hill,14
+Sydney,39
+Tablelands,14
+Tamworth Regional,43
+Tasman,3
+Tatiara,14
+Tea Tree Gully,14
+Temora,7
+Tenterfield,9
+The Coorong,19
+The Hills,26
+Toodyay,12
+Toowoomba,55
+Townsville,53
+Towong,11
+Trayning,1
+Tumby Bay,3
+Tweed,42
+Unincorporated,11
+Unincorporated ACT,61
+Unincorporated NT,23
+Unincorporated SA,47
+Unincorporated Vic,2
+Unley,8
+Upper Hunter,13
+Upper Lachlan,17
+Uralla,8
+Victor Harbor,7
+Victoria Daly,21
+Victoria Park,4
+Victoria Plains,9
+Vincent,8
+Wagait,1
+Wagga Wagga,27
+Wagin,4
+Wakefield,23
+Walcha,14
+Walgett,6
+Wandering,7
+Wangaratta,23
+Wanneroo,41
+Waratah/Wynyard,15
+Waroona,13
+Warren,3
+Warrnambool,12
+Warrumbungle,23
+Wattle Range,24
+Waverley,9
+Weddin,6
+Weipa,1
+Wellington,31
+Wentworth,13
+West Arnhem,21
+West Arthur,5
+West Coast,10
+West Daly,2
+West Tamar,15
+West Torrens,17
+West Wimmera,8
+Western Downs,22
+Westonia,3
+Whitehorse,18
+Whitsunday,24
+Whittlesea,33
+Whyalla,9
+Wickepin,1
+Williams,5
+Willoughby,12
+Wingecarribee,33
+Wodonga,10
+Wollondilly,37
+Wollongong,47
+Wongan-Ballidu,3
+Woollahra,5
+Wudinna,1
+Wyndham,47
+Wyndham-East Kimberley,13
+Yankalilla,6
+Yarra,12
+Yarra Ranges,57
+Yarrabah,2
+Yarriambiack,5
+Yass Valley,20
+Yilgarn,4
+York,5
+Yorke Peninsula,15
