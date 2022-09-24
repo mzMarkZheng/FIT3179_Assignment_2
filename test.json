@@ -1,59 +1,213 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Fatal Crashes",
-    "width": 800,
-    "height": 400,
-    "projection": {
-        "type": "equirectangular"
-    },
-    "data": {
-        "url": "https://raw.githubusercontent.com/mzMarkZheng/FIT3179_Week9_HW/main/Dataset/sa4.json",
-        "format": {
-            "type": "topojson",
-            "feature": "SA4_2021_AUST_GDA2020"
-        }
-    },
-    "transform": [
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "description": "An interactive world map supporting pan and zoom.",
+    "width": 600,
+    "height": 500,
+    "autosize": "none",
+    "signals": [
         {
-            "lookup": "properties.STE_NAME21",
-            "from": {
-                "data": {
-                    "url": "https://raw.githubusercontent.com/mzMarkZheng/FIT3179_Week9_HW/main/Dataset/state_crashes.csv"
-                },
-                "key": "State",
-                "fields": [
-                    "Fatal_Crashes",
-                    "Population"
-                ]
-            }
+            "name": "tx",
+            "update": "width / 2"
         },
         {
-            "calculate": "datum.Fatal_Crashes/datum.Population * 10000",
-            "as": "Fatal Crashes per 10,000 population"
+            "name": "ty",
+            "update": "height / 2"
+        },
+        {
+            "name": "scale",
+            "value": 700,
+            "on": [
+                {
+                    "events": {
+                        "type": "wheel",
+                        "consume": true
+                    },
+                    "update": "clamp(scale * pow(1.0005, -event.deltaY * pow(16, event.deltaMode)), 150, 11000)"
+                }
+            ]
+        },
+        {
+            "name": "angles",
+            "value": [
+                0,
+                0
+            ],
+            "on": [
+                {
+                    "events": "mousedown",
+                    "update": "[rotateX, centerY]"
+                }
+            ]
+        },
+        {
+            "name": "cloned",
+            "value": null,
+            "on": [
+                {
+                    "events": "mousedown",
+                    "update": "copy('projection')"
+                }
+            ]
+        },
+        {
+            "name": "start",
+            "value": null,
+            "on": [
+                {
+                    "events": "mousedown",
+                    "update": "invert(cloned, xy())"
+                }
+            ]
+        },
+        {
+            "name": "drag",
+            "value": null,
+            "on": [
+                {
+                    "events": "[mousedown, window:mouseup] > window:mousemove",
+                    "update": "invert(cloned, xy())"
+                }
+            ]
+        },
+        {
+            "name": "delta",
+            "value": null,
+            "on": [
+                {
+                    "events": {
+                        "signal": "drag"
+                    },
+                    "update": "[drag[0] - start[0], start[1] - drag[1]]"
+                }
+            ]
+        },
+        {
+            "name": "rotateX",
+            "value": 586,
+            "on": [
+                {
+                    "events": {
+                        "signal": "delta"
+                    },
+                    "update": "angles[0] + delta[0]"
+                }
+            ]
+        },
+        {
+            "name": "centerY",
+            "value": -26,
+            "on": [
+                {
+                    "events": {
+                        "signal": "delta"
+                    },
+                    "update": "clamp(angles[1] + delta[1], -60, 60)"
+                }
+            ]
         }
     ],
-    "mark": {
-        "type": "geoshape",
-        "stroke": "black"
-    },
-    "encoding": {
-        "color": {
-            "field": "Fatal Crashes per 10,000 population",
-            "type": "quantitative",
+    "projections": [
+        {
+            "name": "projection",
+            "type": "equirectangular",
             "scale": {
-                "type": "log"
+                "signal": "scale"
+            },
+            "rotate": [
+                {
+                    "signal": "rotateX"
+                },
+                0,
+                0
+            ],
+            "center": [
+                0,
+                {
+                    "signal": "centerY"
+                }
+            ],
+            "translate": [
+                {
+                    "signal": "tx"
+                },
+                {
+                    "signal": "ty"
+                }
+            ]
+        }
+    ],
+    "data": [
+        {
+            "name": "world",
+            "url": "https://raw.githubusercontent.com/mzMarkZheng/FIT3179_Week9_HW/main/Dataset/sa4.json",
+            "format": {
+                "type": "topojson",
+                "feature": "SA4_2021_AUST_GDA2020"
             }
         },
-        "tooltip": [
-            {
-                "field": "properties.STE_NAME21",
-                "type": "nominal",
-                "title": "State"
+        {
+            "name": "graticule",
+            "transform": [
+                {
+                    "type": "graticule",
+                    "step": [
+                        15,
+                        15
+                    ]
+                }
+            ]
+        }
+    ],
+    "marks": [
+        {
+            "type": "shape",
+            "from": {
+                "data": "graticule"
             },
-            {
-                "field": "Fatal_Crashes",
-                "type": "quantitative"
-            }
-        ]
-    }
+            "encode": {
+                "enter": {
+                    "strokeWidth": {
+                        "value": 1
+                    },
+                    "stroke": {
+                        "value": "#ddd"
+                    },
+                    "fill": {
+                        "value": null
+                    }
+                }
+            },
+            "transform": [
+                {
+                    "type": "geoshape",
+                    "projection": "projection"
+                }
+            ]
+        },
+        {
+            "type": "shape",
+            "from": {
+                "data": "world"
+            },
+            "encode": {
+                "enter": {
+                    "strokeWidth": {
+                        "value": 0.5
+                    },
+                    "stroke": {
+                        "value": "#bbb"
+                    },
+                    "fill": {
+                        "value": "#e5e8d3"
+                    }
+                }
+            },
+            "transform": [
+                {
+                    "type": "geoshape",
+                    "projection": "projection"
+                }
+            ]
+        }
+    ]
 }
