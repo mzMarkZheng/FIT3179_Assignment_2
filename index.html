@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +10,65 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
     <script src="vega_lite_vis.js"></script>
-    <title>First vega-lite graph </title>
+    <title>Australia Road Traffic Crash Fatalities</title>
+
 </head>
 
 <body>
-    <h1>First vega-lite graph</h1>
-    <div id="bar_chart">
-        test
+    <h1 style="text-align:center"><b>Australia Road Traffic Crash Fatalities</b></h1>
+
+    <p style="text-align:center"><b>Fatal Crashes in Australia Since 1989</b></p>
+
+    <div class="container">
+        <div id="MotorChart">
+        </div>
+        <div id="PopulationChart" style="display: none">
+        </div>
+        <div id="RoadChart" style="display: none">
+        </div>
     </div>
+
+    <div id="buttons">
+        <button class="button-31" role="button" id="toggleMotor">Motor</button>
+        <button class="button-31" role="button" id="togglePopulation">Population</button>
+        <button class="button-31" role="button" id="toggleRoad">Road Length</button>
+    </div>
+
+    <script>
+        const MotorDiv = document.getElementById("MotorChart");
+        const PopulationDiv = document.getElementById("PopulationChart");
+        const RoadDiv = document.getElementById("RoadChart");
+
+        const MotorBtn = document.getElementById("toggleMotor");
+        const PopulationBtn = document.getElementById("togglePopulation");
+        const RoadBtn = document.getElementById("toggleRoad");
+
+
+        MotorBtn.onclick = function () {
+            if (MotorDiv.style.display == "none") {
+                MotorDiv.style.display = "block";
+                PopulationDiv.style.display = "none";
+                RoadDiv.style.display = "none";
+            }
+        };
+
+        PopulationBtn.onclick = function () {
+            if (PopulationDiv.style.display == "none") {
+                MotorDiv.style.display = "none";
+                PopulationDiv.style.display = "block";
+                RoadDiv.style.display = "none";
+            }
+        };
+
+        RoadBtn.onclick = function () {
+            if (RoadDiv.style.display == "none") {
+                MotorDiv.style.display = "none";
+                PopulationDiv.style.display = "none";
+                RoadDiv.style.display = "block";
+            }
+        };
+    </script>
+
 </body>
 
 </html>

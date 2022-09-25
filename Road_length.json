@@ -1,6 +1,5 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Fatal Crashes",
     "width": 800,
     "height": 400,
     "projection": {
@@ -29,7 +28,7 @@
         },
         {
             "calculate": "datum.Fatal_Crashes/datum.Road_Length * 1000",
-            "as": "Fatal Crashes per 1000 km of Road"
+            "as": "Fatal Crashes per 1000 Km of Road"
         }
     ],
     "mark": {
@@ -38,10 +37,28 @@
     },
     "encoding": {
         "color": {
-            "field": "Fatal Crashes per 1000 km of Road",
+            "field": "Fatal Crashes per 1000 Km of Road",
             "type": "quantitative",
             "scale": {
-                "type": "log"
+                "type": "log",
+                "scheme": "reds"
+            },
+            "legend": {
+                "title": "Fatal Crashes per 1000 Km of Road",
+                "titleLimit": 300,
+                "titleAnchor": "middle",
+                "titleFont": "Helvetica",
+                "titleFontSize": 13,
+                "titleColor": "#fff",
+                "orient": "none",
+                "legendX": 270,
+                "legendY": 420,
+                "labelBaseline": "middle",
+                "labelFont": "Helvetica",
+                "labelColor": "#fff",
+                "direction": "horizontal",
+                "gradientLength": 300,
+                "gradientStrokeColor": "#b53030"
             }
         },
         "tooltip": [
@@ -55,5 +72,13 @@
                 "type": "quantitative"
             }
         ]
+    },
+    "config": {
+        "background": "#414141",
+        "style": {
+            "cell": {
+                "stroke": "transparent"
+            }
+        }
     }
 }
