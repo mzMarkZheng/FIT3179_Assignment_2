@@ -22,8 +22,11 @@ p {
     padding: 0;
 }
 
-#buttons {
-    text-align: center;
+.buttons {
+    text-align: left;
+    position: relative;
+    bottom: -300px;
+    left: 170px;
 }
 
 
@@ -57,4 +60,24 @@ p {
 
 .button-31:hover {
     opacity: .75;
+}
+
+
+.container {
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    padding: 10px;
+}
+
+.one {
+    width: 0%;
+    height: 200px;
+    background: red;
+    float: left;
+}
+
+.two {
+    margin-left: 50%;
+    height: 200px;
 }

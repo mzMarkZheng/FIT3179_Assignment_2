@@ -69,7 +69,8 @@
             },
             {
                 "field": "Fatal_Crashes",
-                "type": "quantitative"
+                "type": "quantitative",
+                "title": "Fatal Crashes"
             }
         ]
     },

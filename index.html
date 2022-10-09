@@ -20,24 +20,35 @@
     <p style="text-align:center"><b>Fatal Crashes in Australia Since 1989</b></p>
 
     <div class="container">
-        <div id="MotorChart">
+        <div class="one" id="MotorChart">
         </div>
-        <div id="PopulationChart" style="display: none">
+        <div class="one" id="PopulationChart" style="display: none">
         </div>
-        <div id="RoadChart" style="display: none">
+        <div class="one" id="RoadChart" style="display: none">
+        </div>
+
+
+
+        <div class="two" id="YearFat" style="display: block">
+        </div>
+
+
+        <div class="buttons">
+            <button class="button-31" role="button" id="toggleMotor">Motor Vehicles</button>
+            <button class="button-31" role="button" id="togglePopulation">Population</button>
+            <button class="button-31" role="button" id="toggleRoad">Road Length</button>
         </div>
     </div>
 
-    <div id="buttons">
-        <button class="button-31" role="button" id="toggleMotor">Motor Vehicles</button>
-        <button class="button-31" role="button" id="togglePopulation">Population</button>
-        <button class="button-31" role="button" id="toggleRoad">Road Length</button>
-    </div>
+
+
 
     <script>
         const MotorDiv = document.getElementById("MotorChart");
         const PopulationDiv = document.getElementById("PopulationChart");
         const RoadDiv = document.getElementById("RoadChart");
+
+        const YearFatDiv = document.getElementById("YearFat");
 
         const MotorBtn = document.getElementById("toggleMotor");
         const PopulationBtn = document.getElementById("togglePopulation");

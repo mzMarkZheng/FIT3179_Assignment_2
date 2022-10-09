@@ -1,0 +1,197 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "https://raw.githubusercontent.com/mzMarkZheng/FIT3179_Week_10_HW/main/Dataset/Time_fatalities%20bar%20chart/year_month_fatalities.csv"
+    },
+    "width": 600,
+    "height": 300,
+    "transform": [
+        {
+            "calculate": "year(datum.Date)",
+            "as": "year"
+        },
+        {
+            "filter": "datum.year>=minYear"
+        },
+        {
+            "filter": "datum.year<=maxYear"
+        },
+        {
+            "filter": {
+                "param": "state_highlight"
+            }
+        }
+    ],
+    "params": [
+        {
+            "name": "minYear",
+            "value": 1989,
+            "bind": {
+                "input": "range",
+                "min": 1989,
+                "max": 2022,
+                "step": 1,
+                "name": "Start year: "
+            }
+        },
+        {
+            "name": "maxYear",
+            "value": 2022,
+            "bind": {
+                "input": "range",
+                "min": 1989,
+                "max": 2022,
+                "step": 1,
+                "name": "End year: "
+            }
+        }
+    ],
+    "layer": [
+        {
+            "params": [
+                {
+                    "name": "state_highlight",
+                    "select": {
+                        "type": "point",
+                        "fields": [
+                            "State"
+                        ]
+                    },
+                    "bind": "legend"
+                }
+            ],
+            "mark": "area",
+            "encoding": {
+                "x": {
+                    "field": "Date",
+                    "timeUnit": "yearmonth",
+                    "axis": {
+                        "format": "%Y",
+                        "titleAnchor": "middle",
+                        "titleFont": "Arial",
+                        "titleFontSize": 12,
+                        "titleColor": "#fff",
+                        "labelBaseline": "middle",
+                        "labelFont": "Arial",
+                        "labelColor": "#fff"
+                    },
+                    "title": "Year"
+                },
+                "y": {
+                    "aggregate": "sum",
+                    "field": "Fatalities",
+                    "title": "Number of Fatalities",
+                    "axis": {
+                        "titleAnchor": "middle",
+                        "titleFont": "Arial",
+                        "titleFontSize": 12,
+                        "titleColor": "#fff",
+                        "labelBaseline": "middle",
+                        "labelFont": "Arial",
+                        "labelColor": "#fff"
+                    }
+                },
+                "color": {
+                    "field": "State",
+                    "scale": {
+                        "scheme": "darkred"
+                    },
+                    "legend": {
+                        "values": [
+                            "ACT",
+                            "NSW",
+                            "NT",
+                            "Qld",
+                            "SA",
+                            "Tas",
+                            "Vic",
+                            "WA"
+                        ],
+                        "titleAnchor": "middle",
+                        "titleFont": "Helvetica",
+                        "titleFontSize": 12,
+                        "titleColor": "#fff",
+                        "labelBaseline": "middle",
+                        "labelFont": "Helvetica",
+                        "labelColor": "#fff"
+                    }
+                },
+                "opacity": {
+                    "condition": {
+                        "param": "state_highlight",
+                        "value": 0.6
+                    },
+                    "value": 0.2
+                },
+                "tooltip": [
+                    {
+                        "field": "State",
+                        "type": "nominal"
+                    },
+                    {
+                        "field": "Fatalities",
+                        "type": "quantitative",
+                        "format": ","
+                    },
+                    {
+                        "field": "Year",
+                        "type": "quantitative",
+                        "format": ","
+                    },
+                    {
+                        "field": "Month",
+                        "type": "nominal"
+                    }
+                ]
+            }
+        },
+        {
+            "mark": {
+                "type": "rule",
+                "color": "red",
+                "size": 1
+            },
+            "encoding": {
+                "x": {
+                    "field": "line_date",
+                    "type": "temporal"
+                }
+            },
+            "data": {
+                "values": [
+                    {
+                        "line_date": "1 Dec 1989 0:0:00"
+                    }
+                ],
+                "format": {
+                    "parse": {
+                        "line_date": "utc:'%d %b %Y %H:%M:%S'"
+                    }
+                }
+            },
+            "transform": [
+                {
+                    "calculate": "year(datum.line_date)",
+                    "as": "line_year"
+                },
+                {
+                    "filter": "datum.line_year>=minYear"
+                },
+                {
+                    "filter": "datum.line_year<=maxYear"
+                }
+            ]
+        }
+    ],
+    "config": {
+        "background": "#414141",
+        "style": {
+            "cell": {
+                "stroke": "transparent"
+            },
+            "view": {
+                "stroke": null
+            }
+        }
+    }
+}
