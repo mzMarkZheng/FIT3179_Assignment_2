@@ -1,0 +1,271 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A population pyramid for the US in 2000.",
+  "data": {
+    "values": [
+      {
+        "time": "Night",
+        "speed": 5,
+        "fatalities": 1
+      },
+      {
+        "time": "Night",
+        "speed": 10,
+        "fatalities": 8
+      },
+      {
+        "time": "Night",
+        "speed": 15,
+        "fatalities": 0
+      },
+      {
+        "time": "Night",
+        "speed": 20,
+        "fatalities": 8
+      },
+      {
+        "time": "Night",
+        "speed": 25,
+        "fatalities": 1
+      },
+      {
+        "time": "Night",
+        "speed": 30,
+        "fatalities": 9
+      },
+      {
+        "time": "Night",
+        "speed": 40,
+        "fatalities": 143
+      },
+      {
+        "time": "Night",
+        "speed": 50,
+        "fatalities": 1338
+      },
+      {
+        "time": "Night",
+        "speed": 60,
+        "fatalities": 6571
+      },
+      {
+        "time": "Night",
+        "speed": 70,
+        "fatalities": 1245
+      },
+      {
+        "time": "Night",
+        "speed": 75,
+        "fatalities": 124
+      },
+      {
+        "time": "Night",
+        "speed": 80,
+        "fatalities": 2830
+      },
+      {
+        "time": "Night",
+        "speed": 90,
+        "fatalities": 481
+      },
+      {
+        "time": "Night",
+        "speed": 100,
+        "fatalities": 7255
+      },
+      {
+        "time": "Night",
+        "speed": 110,
+        "fatalities": 2444
+      },
+      {
+        "time": "Night",
+        "speed": 130,
+        "fatalities": 45
+      },
+      {
+        "time": "Day",
+        "speed": 5,
+        "fatalities": 4
+      },
+      {
+        "time": "Day",
+        "speed": 10,
+        "fatalities": 10
+      },
+      {
+        "time": "Day",
+        "speed": 15,
+        "fatalities": 1
+      },
+      {
+        "time": "Day",
+        "speed": 20,
+        "fatalities": 20
+      },
+      {
+        "time": "Day",
+        "speed": 25,
+        "fatalities": 1
+      },
+      {
+        "time": "Day",
+        "speed": 30,
+        "fatalities": 6
+      },
+      {
+        "time": "Day",
+        "speed": 40,
+        "fatalities": 219
+      },
+      {
+        "time": "Day",
+        "speed": 50,
+        "fatalities": 1672
+      },
+      {
+        "time": "Day",
+        "speed": 60,
+        "fatalities": 7317
+      },
+      {
+        "time": "Day",
+        "speed": 70,
+        "fatalities": 1356
+      },
+      {
+        "time": "Day",
+        "speed": 75,
+        "fatalities": 130
+      },
+      {
+        "time": "Day",
+        "speed": 80,
+        "fatalities": 3439
+      },
+      {
+        "time": "Day",
+        "speed": 90,
+        "fatalities": 671
+      },
+      {
+        "time": "Day",
+        "speed": 100,
+        "fatalities": 11353
+      },
+      {
+        "time": "Day",
+        "speed": 110,
+        "fatalities": 3718
+      },
+      {
+        "time": "Day",
+        "speed": 130,
+        "fatalities": 80
+      },
+    ]
+  },
+  "spacing": 0,
+  "hconcat": [
+    {
+      "transform": [
+        {
+          "filter": {
+            "field": "time",
+            "equal": "Day"
+          }
+        }
+      ],
+      "title": "Day",
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "speed",
+          "axis": null,
+          "sort": "descending"
+        },
+        "x": {
+          "aggregate": "sum",
+          "field": "fatalities",
+          "title": "Fatalities",
+          "axis": {
+            "format": "s"
+          },
+          "sort": "descending"
+        },
+        "color": {
+          "field": "time",
+          "scale": {
+            "range": [
+              "#675193",
+              "#ca8861"
+            ]
+          },
+          "legend": null
+        }
+      }
+    },
+    {
+      "width": 20,
+      "view": {
+        "stroke": null
+      },
+      "mark": {
+        "type": "text",
+        "align": "center"
+      },
+      "encoding": {
+        "y": {
+          "field": "speed",
+          "type": "ordinal",
+          "axis": null,
+          "sort": "descending"
+        },
+        "text": {
+          "field": "speed",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": {
+            "field": "time",
+            "equal": "Night"
+          }
+        }
+      ],
+      "title": "Night",
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "speed",
+          "title": null,
+          "axis": null,
+          "sort": "descending"
+        },
+        "x": {
+          "aggregate": "sum",
+          "field": "fatalities",
+          "title": "Fatalities",
+          "axis": {
+            "format": "s"
+          }
+        },
+        "color": {
+          "field": "time",
+          "legend": null
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "grid": false
+    }
+  }
+}

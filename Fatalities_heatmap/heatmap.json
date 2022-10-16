@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/mzMarkZheng/FIT3179_Week_10_HW/main/Dataset/Heatmap/heatmap.csv"
+  },
+  "transform": [
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "num_fatalities_heatmap",
+          "as": "sum_fatalities_heatmap"
+        }
+      ],
+      "groupby": [
+        "Day",
+        "Time"
+      ]
+    },
+    {
+      "calculate": "toNumber(datum.Time)",
+      "as": "Time"
+    }
+  ],
+  "mark": "rect",
+  "width": 600,
+  "height": 300,
+  "encoding": {
+    "x": {
+      "field": "Time",
+      "type": "nominal",
+      "title": "Hour"
+    },
+    "y": {
+      "field": "Day",
+      "type": "ordinal",
+      "sort": "Day",
+      "title": "Weekday"
+    },
+    "color": {
+      "field": "sum_fatalities_heatmap",
+      "type": "quantitative",
+      "scale": {
+        "type": "log"
+      },
+      "legend": {
+        "title": null
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Day",
+        "type": "nominal",
+        "title": "Weekday"
+      },
+      {
+        "field": "Time",
+        "type": "nominal",
+        "title": "Hour"
+      },
+      {
+        "field": "sum_fatalities_heatmap",
+        "type": "quantitative",
+        "title": "Fatal Crashes"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "strokeWidth": 0,
+      "step": 13
+    },
+    "axis": {
+      "domain": false
+    }
+  }
+}

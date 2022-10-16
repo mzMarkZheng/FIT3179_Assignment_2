@@ -19,19 +19,19 @@
 
     <p style="text-align:center"><b>Fatal Crashes in Australia Since 1989</b></p>
 
+    <div class="one" id="Heatmap">
+    </div>
+    <div class="two" id="YearFat" style="display: block">
+    </div>
+
+
     <div class="container">
-        <div class="one" id="MotorChart">
+        <div id="MotorChart">
         </div>
-        <div class="one" id="PopulationChart" style="display: none">
+        <div id="PopulationChart" style="display: none">
         </div>
-        <div class="one" id="RoadChart" style="display: none">
+        <div id="RoadChart" style="display: none">
         </div>
-
-
-
-        <div class="two" id="YearFat" style="display: block">
-        </div>
-
 
         <div class="buttons">
             <button class="button-31" role="button" id="toggleMotor">Motor Vehicles</button>
@@ -50,9 +50,12 @@
 
         const YearFatDiv = document.getElementById("YearFat");
 
+        const HeatmapDiv = document.getElementById("Heatmap");
+
         const MotorBtn = document.getElementById("toggleMotor");
         const PopulationBtn = document.getElementById("togglePopulation");
         const RoadBtn = document.getElementById("toggleRoad");
+
 
 
         MotorBtn.onclick = function () {

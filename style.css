@@ -72,6 +72,7 @@ p {
 
 .one {
     width: 0%;
+    margin-right: 50%;
     height: 200px;
     background: red;
     float: left;
