@@ -1271,3 +1271,13 @@ section {
     padding: 5px 0;
   }
 }
+
+mark.red {
+  color: #ff0000;
+  background: none;
+}
+
+mark.blue {
+  color: #117cd3;
+  background: none;
+}
