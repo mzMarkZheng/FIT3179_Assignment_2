@@ -1281,3 +1281,7 @@ mark.blue {
   color: #117cd3;
   background: none;
 }
+
+h1 {
+  text-align: center;
+}
