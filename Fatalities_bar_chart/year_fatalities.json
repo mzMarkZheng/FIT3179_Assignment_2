@@ -66,14 +66,12 @@
                     "field": "Date",
                     "timeUnit": "yearmonth",
                     "axis": {
-                        "format": "%Y",
                         "titleAnchor": "middle",
                         "titleFont": "Arial",
                         "titleFontSize": 12,
-                        "titleColor": "#fff",
                         "labelBaseline": "middle",
                         "labelFont": "Arial",
-                        "labelColor": "#fff"
+                        "grid": false
                     },
                     "title": "Year"
                 },
@@ -85,10 +83,9 @@
                         "titleAnchor": "middle",
                         "titleFont": "Arial",
                         "titleFontSize": 12,
-                        "titleColor": "#fff",
                         "labelBaseline": "middle",
                         "labelFont": "Arial",
-                        "labelColor": "#fff"
+                        "grid": false
                     }
                 },
                 "color": {
@@ -110,10 +107,8 @@
                         "titleAnchor": "middle",
                         "titleFont": "Helvetica",
                         "titleFontSize": 12,
-                        "titleColor": "#fff",
                         "labelBaseline": "middle",
-                        "labelFont": "Helvetica",
-                        "labelColor": "#fff"
+                        "labelFont": "Helvetica"
                     }
                 },
                 "tooltip": [
@@ -140,7 +135,6 @@
         }
     ],
     "config": {
-        "background": "#414141",
         "style": {
             "cell": {
                 "stroke": "transparent"

@@ -41,7 +41,8 @@
       "field": "sum_fatalities_heatmap",
       "type": "quantitative",
       "scale": {
-        "type": "log"
+        "type": "log",
+        "scheme": "reds"
       },
       "legend": {
         "title": null

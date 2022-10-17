@@ -162,7 +162,7 @@
         "time": "Day",
         "speed": 130,
         "fatalities": 80
-      },
+      }
     ]
   },
   "spacing": 0,
@@ -196,10 +196,7 @@
         "color": {
           "field": "time",
           "scale": {
-            "range": [
-              "#675193",
-              "#ca8861"
-            ]
+            "scheme": "reds"
           },
           "legend": null
         }

@@ -6,16 +6,6 @@
         {
             "name": "rawData",
             "values": [
-                // {"key": {"stk1": "Day", "stk2": "1. Mon-Thur"}, "doc_count": 12449},
-                // {"key": {"stk1": "Day", "stk2": "2. Friday"}, "doc_count": 4670},
-                // {"key": {"stk1": "Day", "stk2": "3. Saturday"}, "doc_count": 4826},
-                // {"key": {"stk1": "Day", "stk2": "4. Sunday"}, "doc_count": 4560},
-                // {"key": {"stk1": "Night", "stk2": "1. Mon-Thur"}, "doc_count": 9869},
-                // {"key": {"stk1": "Night", "stk2": "2. Friday"}, "doc_count": 4178},
-                // {"key": {"stk1": "Night", "stk2": "3. Saturday"}, "doc_count": 5035},
-                // {"key": {"stk1": "Night", "stk2": "4. Sunday"}, "doc_count": 4072},
-                // {"key": {"stk1": "Night", "stk2": "Day"}, "doc_count": 0},
-                // {"key": {"stk1": "Night", "stk2": "Night"}, "doc_count": 0},
                 {
                     "key": {
                         "stk1": "Night",
@@ -141,7 +131,7 @@
                         "stk2": "Night"
                     },
                     "doc_count": 0
-                },
+                }
             ],
             "transform": [
                 {
