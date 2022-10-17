@@ -5,7 +5,7 @@ var vg_3 = "Map_idiom/Road_length.json";
 
 
 // 
-var vg_4 = "Fatalities_bar_chart/year_fatalities.json";
+var vg_4 = "Fatalities_year_area_chart/year_fatalities.json";
 
 var vg_5 = "Fatalities_heatmap/heatmap.json";
 
