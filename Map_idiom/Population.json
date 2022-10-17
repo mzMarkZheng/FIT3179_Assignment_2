@@ -44,7 +44,7 @@
                 "scheme": "reds"
             },
             "legend": {
-                "title": "Fatal Crashes per 10,000 People",
+                "title": "Fatalities per 10,000 People",
                 "titleLimit": 300,
                 "titleAnchor": "middle",
                 "titleFont": "Helvetica",
@@ -68,12 +68,17 @@
             {
                 "field": "Fatal_Crashes",
                 "type": "quantitative",
-                "title": "Fatal Crashes"
+                "title": "Fatalities"
+            },
+            {
+                "field": "Population",
+                "type": "quantitative",
+                "title": "Population"
             },
             {
                 "field": "Fatal Crashes per 10,000 People",
                 "type": "quantitative",
-                "title": "Fatal Crashes per 10,000 People"
+                "title": "Fatalities per 10,000 People"
             }
         ]
     },

@@ -199,7 +199,24 @@
             "scheme": "reds"
           },
           "legend": null
-        }
+        },
+        "tooltip": [
+          {
+            "field": "time",
+            "type": "nominal",
+            "title": "Time"
+          },
+          {
+            "field": "speed",
+            "type": "quantitative",
+            "title": "Speed Limit"
+          },
+          {
+            "field": "fatalities",
+            "type": "quantitative",
+            "title": "Fatalities"
+          }
+        ]
       }
     },
     {
@@ -253,7 +270,24 @@
         "color": {
           "field": "time",
           "legend": null
-        }
+        },
+        "tooltip": [
+          {
+            "field": "time",
+            "type": "nominal",
+            "title": "Time"
+          },
+          {
+            "field": "speed",
+            "type": "quantitative",
+            "title": "Speed Limit"
+          },
+          {
+            "field": "fatalities",
+            "type": "quantitative",
+            "title": "Fatalities"
+          }
+        ]
       }
     }
   ],

@@ -62,7 +62,7 @@
       {
         "field": "sum_fatalities_heatmap",
         "type": "quantitative",
-        "title": "Fatal Crashes"
+        "title": "Fatalities"
       }
     ]
   },

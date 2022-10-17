@@ -44,7 +44,7 @@
                 "scheme": "reds"
             },
             "legend": {
-                "title": "Fatal Crashes per 1000 Km of Road",
+                "title": "Fatalities per 1000 Km of Road",
                 "titleLimit": 300,
                 "titleAnchor": "middle",
                 "titleFont": "Helvetica",
@@ -68,12 +68,17 @@
             {
                 "field": "Fatal_Crashes",
                 "type": "quantitative",
-                "title": "Fatal Crashes"
+                "title": "Fatalities"
+            },
+            {
+                "field": "Road_Length",
+                "type": "quantitative",
+                "title": "Road Length (km)"
             },
             {
                 "field": "Fatal Crashes per 1000 Km of Road",
                 "type": "quantitative",
-                "title": "Fatal Crashes per 1000km of Road"
+                "title": "Fatalities per 1000km of Road"
             }
         ]
     },

@@ -68,12 +68,12 @@
             {
                 "field": "Fatal_Crashes",
                 "type": "quantitative",
-                "title": "Fatal Crashes"
+                "title": "Fatalities"
             },
             {
                 "field": "Fatal Crashes per 10,000 Motor Vehicles",
                 "type": "quantitative",
-                "title": "Fatal Crashes per 10,000 Motor Vehicles"
+                "title": "Fatalities per 10,000 Motor Vehicles"
             }
         ]
     },
